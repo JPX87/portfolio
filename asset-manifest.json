@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2b936357.css",
+    "main.js": "/static/js/main.dd9deb68.js",
+    "static/media/stages.png": "/static/media/stages.6f0bc8b0046e4514d5a8.png",
+    "static/media/MaryseBastieL.png": "/static/media/MaryseBastieL.7ad2b21f52937e1d1acf.png",
+    "static/media/valadon.png": "/static/media/valadon.9d8ad46957cb1d18a873.png",
+    "static/media/laposte.jpg": "/static/media/laposte.147e610f5d81c85a9478.jpg",
+    "index.html": "/index.html",
+    "main.2b936357.css.map": "/static/css/main.2b936357.css.map",
+    "main.dd9deb68.js.map": "/static/js/main.dd9deb68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b936357.css",
+    "static/js/main.dd9deb68.js"
+  ]
+}
