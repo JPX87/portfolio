@@ -1,9 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow: /CV.pdf
-Disallow: /?p=projets
-Disallow: /?p=contact
-Disallow: /?p=competences
-Disallow: /?p=connexion
-Disallow: /?p=about
-
