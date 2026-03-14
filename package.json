@@ -1,68 +1,33 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
-  "homepage": "https://save.jeremypatapy.fr",
+  "version": "Alpha 0.2.0",
   "private": true,
-  "dependencies": {
-    "@emailjs/browser": "^3.11.0",
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-regular-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-native-fontawesome": "^0.3.0",
-    "@loadable/component": "^5.15.3",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@uiball/loaders": "^1.2.6",
-    "framer-motion": "^10.12.10",
-    "loader": "^2.1.1",
-    "noop": "^1.0.1",
-    "postcss": "^8.4.23",
-    "postcss-loader": "^7.3.0",
-    "postcss-normalize": "^10.0.1",
-    "react": "^18.2.0",
-    "react-cookie": "^4.1.1",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-native": "^0.71.8",
-    "react-native-svg": "^13.9.0",
-    "react-native-web": "^0.19.4",
-    "react-router-dom": "^6.11.1",
-    "react-scripts": "^5.0.1",
-    "react-slide-routes": "^3.0.3",
-    "sass": "^1.62.1",
-    "styled": "^1.0.0",
-    "styled-components": "^5.3.10",
-    "web-vitals": "^3.3.1"
-  },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
+  "dependencies": {
+    "@emailjs/browser": "^4.4.0",
+    "@loadable/component": "^5.15.3",
+    "@tailwindcss/postcss": "^4.2.1",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "framer-motion": "^12.0.0",
+    "ldrs": "^1.1.9",
+    "loader": "^2.1.1",
+    "next": "^16.1.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-helmet-async": "^3.0.0",
+    "sass": "^1.98.0",
+    "styled": "^1.0.0",
+    "styled-components": "^6.1.0",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5"
   }
 }

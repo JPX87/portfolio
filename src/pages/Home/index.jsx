@@ -96,7 +96,7 @@ function Home({ firstLunch }) {
             dragElastic={1}
 
 
-            href="/CV_2023.pdf"
+            href="/CV 2026.pdf"
             target="_blank"
             className='btnCV' >Télécharger mon CV</motion.a>
         </div>

@@ -16,11 +16,12 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #3156fc;
+    background: var(--color);
+    transition: all 0.3s;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #2341c8;
+    background: #2d4fea;
   }
 
   ::-webkit-scrollbar-thumb {
@@ -80,9 +81,9 @@
     background: var(--back1-color);
     color: var(--text1-color);
 
-    border: 3px solid #2749de;
-    box-shadow: 13px 13px 0px #2749de;
-    -webkit-box-shadow: 13px 13px 0px #2749de;
+    border: 3px solid var(--color);
+    box-shadow: 13px 13px 0px var(--color);
+    -webkit-box-shadow: 13px 13px 0px var(--color);
 
     //transition: all .3s;
 
@@ -145,7 +146,7 @@
     #bMenu {
       display: block;
       height: 82px;
-      color: #2749de;
+      color: var(--color);
 
       h1 {
         position: absolute;
@@ -171,7 +172,7 @@
         display: block;
         height: 5px;
         width: 50px;
-        background-color: #2749de;
+        background-color: var(--color);
         margin: 10px auto;
         -webkit-transition: all .7s ease;
         -o-transition: all .7s ease;

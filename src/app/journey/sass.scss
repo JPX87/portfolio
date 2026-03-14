@@ -1,5 +1,4 @@
-@import '../../color.scss';
-
+@use '../../scss/color.scss';
 
 .Journey {
     min-height: calc(100vh - 232px);
@@ -507,9 +506,6 @@
                     }
 
                     &.active {
-                        min-height: -webkit-min-content;
-                        min-height: -moz-min-content;
-                        min-height: min-content;
                         overflow: auto;
 
                         cursor: auto;
