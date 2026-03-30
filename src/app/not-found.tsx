@@ -1,13 +1,16 @@
+import CustomLayout from '@/components/CustomLayout';
+import Menu from '@/components/Menu';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Page introuvable',
+    title: 'Patapy Jérémy - Page introuvable',
 };
 
 export default function NotFound() {
     return (
-        <div className="error">
-            <h1 style={{ margin: '50px 0 50px 0 ', textAlign: 'center' }}>Page introuvable 🫤</h1>
-        </div>
+        <CustomLayout>
+            <Menu />
+            <h1 className='my-12 text-center text-3xl'>Page introuvable 🫤</h1>
+        </CustomLayout>
     );
 }

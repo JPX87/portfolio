@@ -8,7 +8,6 @@ if (typeof window !== 'undefined') {
     ring.register();
 }
 
-
 interface ImageLoaderProps {
     src: string;
     alt: string;
@@ -42,10 +41,10 @@ function ImageLoader({ src, alt, id, className, absolute, relative, width, heigh
                     src={src}
                     alt={alt}
                     id={id}
-                    className={`${className ?? ''}${height !== undefined ? 'h-auto' : ''} ${width !== undefined ? 'w-auto' : ''}`}
+                    className={`${loading ? 'absolute' : ''} ${className ?? ''} ${height !== undefined ? 'h-auto' : ''} ${width !== undefined ? 'w-auto' : ''}`}
                     onLoad={handleLoad}
                     onError={handleError}
-                    loading="lazy"
+                    loading={priority ? "eager" : "lazy"}
                     width={width}
                     height={height}
                     quality={quality}
@@ -66,10 +65,13 @@ function ImageLoader({ src, alt, id, className, absolute, relative, width, heigh
                     transform: relative ? 'none' : undefined,
                     top: relative ? 0 : undefined,
                     bottom: relative ? 0 : undefined,
-                }}>
-                    <l-ring size="40" stroke="5" speed="2" color="var(--text1-color)"></l-ring>
-                </div>
-            )}
+                }}
+                    className={className?.split(' ').filter(c => c.startsWith('w-') || c.startsWith('!w-') || c.startsWith('h-') || c.startsWith('!h-') || c.startsWith('my-') || c.startsWith('!my-')).join(' ')}
+                >
+                    <l-ring size="40" stroke="5" speed="2" color="var(--color)" bg-opacity="0"></l-ring>
+                </div >
+            )
+            }
         </>
     );
 }

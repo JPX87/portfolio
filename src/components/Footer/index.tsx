@@ -1,13 +1,18 @@
 "use client";
 
 import Link from 'next/link';
-import './sass.scss';
+import { NextJs, TailwindCSS, TypeScript } from 'developer-icons';
 
 function Footer() {
     return (
-        <footer>
-            <h1>Réalisé avec <img src="/logo/react.png" alt="" /><img src="/logo/sass.png" alt="" /></h1>
-            <Link href="/legal-notice">Mentions Légales</Link>
+        <footer className='w-max m-auto'>
+            <h1 className='flex text-3xl items-end font-bold'>Réalisé avec
+                <NextJs className='mx-2 w-8! h-8!' />,
+                <TailwindCSS className='mx-2 w-8! h-8!' />
+                et
+                <TypeScript className='mx-2 w-8! h-8!' />
+            </h1>
+            <Link href="/legal-notice" className='block my-4 text-center underline'>Mentions Légales</Link>
         </footer>
     );
 }

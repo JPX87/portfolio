@@ -1,3 +1,16 @@
+import { ElementType } from 'react';
+import {
+  JavaScript, TypeScript, React as ReactLogo, NextJs, Angular,
+  CSS3, Sass, TailwindCSS, Bootstrap4,
+  NodeJs, ExpressJsDark, PHP, SymfonyDark,
+  MySQL, Oracle, MongoDB,
+  Java, Spring,
+  Android, Xamarin, CSharp, Python,
+  Linux, Bash, Git, Docker, Kubernetes,
+  VisualStudioCode,
+  Jira, Figma
+} from 'developer-icons'
+
 export interface SkillLogo {
   src: string;
   className?: string;
@@ -5,83 +18,129 @@ export interface SkillLogo {
 
 export interface Skill {
   name: string;
-  level: string;
-  logos?: SkillLogo[];
+  level: string | string[];
+  logos?: (ElementType | SkillLogo)[];
 }
 
 export interface SkillCategory {
   idStart: number;
   title: string;
   skills: Skill[];
+  className?: string;
+  isLeft?: boolean;
 }
 
 export const skillCategories: SkillCategory[] = [
   {
     idStart: 2,
-    title: 'Développeur :',
+    title: 'Front-End :',
     skills: [
       {
-        name: 'Web - Front',
-        logos: [{ src: '/logo/html.png' }, { src: '/logo/css.png' }, { src: '/logo/js.png' }, { src: '/logo/react.png' }],
-        level: 'html, css : Expert<br />js, React : Débutant',
+        name: 'Langages',
+        logos: [JavaScript, TypeScript],
+        level: 'JS/TS',
       },
       {
-        name: 'Web - Back',
-        logos: [{ src: '/logo/php.png' }, { src: '/logo/symfony.svg' }, { src: '/logo/twig.png' }, { src: '/logo/MySQL.png' }],
-        level: 'php : Avancé<br />Mysql : Avancé<br />Symfony: Débutant',
+        name: 'Frameworks',
+        logos: [ReactLogo, NextJs, Angular],
+        level: 'React, Next.js, Angular',
+      },
+      {
+        name: 'Intégration',
+        logos: [CSS3, Sass, Bootstrap4, TailwindCSS],
+        level: ['CSS/SCSS', 'Bootstrap4, Tailwind'],
+      },
+    ],
+    className: 'bg-gradient-to-br from-(--color-secondary) via-60% via-(--color-secondary) to-(--color)',
+  },
+  {
+    idStart: 5,
+    title: 'Back-End & Data :',
+    skills: [
+      {
+        name: 'Node & Express',
+        logos: [NodeJs, ExpressJsDark],
+        level: 'Node.js, Express JS',
+      },
+      {
+        name: 'PHP',
+        logos: [PHP, SymfonyDark],
+        level: 'PHP, Symfony',
+      },
+      {
+        name: 'Java',
+        logos: [Java, Spring],
+        level: 'Java, Spring Boot, JavaFX',
+      },
+      {
+        name: 'BDD',
+        logos: [MySQL, Oracle, MongoDB],
+        level: ['MySQL, Oracle SQL', 'MongoDB'],
+      },
+    ],
+    className: 'bg-gradient-to-bl from-(--color-secondary) via-60% via-(--color-secondary) to-(--color)',
+    isLeft: true,
+  },
+  {
+    idStart: 9,
+    title: 'Mobile & Scripting :',
+    skills: [
+      {
+        name: 'Scripting',
+        logos: [Python, Bash],
+        level: 'Python, Bash',
       },
       {
         name: 'Mobile',
-        logos: [{ src: '/logo/android.png', className: 'white' }, { src: '/logo/xamarin.png' }],
-        level: 'Débutant'
-      },
-      {
-        name: 'Desktop',
-        logos: [{ src: '/logo/java.png' }, { src: '/logo/c.png' }],
-        level: 'java : Avancé<br />c# : débutant',
-      },
-      {
-        name: 'Autre',
-        logos: [{ src: '/logo/vba.png' }],
-        level: 'VBA : Débutant',
+        logos: [Android, Xamarin, CSharp],
+        level: 'Android Java, Xamarin C#',
       },
     ],
+    className: 'bg-gradient-to-br from-(--color-secondary) via-60% via-(--color-secondary) to-(--color)',
   },
   {
-    idStart: 7,
-    title: 'Réseaux :',
+    idStart: 11,
+    title: 'DevOps & Outils :',
     skills: [
       {
-        name: 'OS',
-        logos: [{ src: '/logo/linux.png' }, { src: '/logo/windows.png' }],
-        level: 'Avancé',
+        name: 'DevOps',
+        logos: [Docker, Kubernetes],
+        level: 'Docker, Kube',
       },
       {
-        name: 'Switch',
-        logos: [{ src: '/logo/cisco.png' }],
-        level: 'Avancé',
+        name: 'Système & Git',
+        logos: [Linux, { src: '/logo/proxmox.png' }, Git],
+        level: 'Linux, Proxmox, Git',
       },
       {
-        name: 'Promox',
-        logos: [{ src: '/logo/proxmox.png' }],
-        level: 'Avancé',
+        name: 'IDE',
+        logos: [VisualStudioCode, { src: '/logo/intellij-idea.png' }],
+        level: 'VS Code, IntelliJ IDEA',
       },
+      {
+        name: 'Task & design',
+        logos: [Jira, Figma],
+        level: 'Jira, Figma',
+      }
     ],
+    className: 'bg-gradient-to-bl from-(--color-secondary) via-60% via-(--color-secondary) to-(--color)',
+    isLeft: true,
   },
   {
-    idStart: 10,
+    idStart: 15,
     title: 'Langues :',
     skills: [
       {
-        name: 'Français',
-        logos: [{ src: '/logo/french.png' }],
-        level: 'Langue marternelle',
-      },
-      {
         name: 'Anglais',
         logos: [{ src: '/logo/english.jpg' }],
-        level: 'Niveau maîtriser B1',
+        level: 'Niveau B1',
+      },
+      {
+        name: 'Français',
+        logos: [{ src: '/logo/french.png' }],
+        level: 'Natif',
       },
     ],
+    className: 'bg-gradient-to-br from-(--color-secondary) via-60% via-(--color-secondary) to-(--color)',
   },
 ];

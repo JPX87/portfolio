@@ -1,6 +1,33 @@
 # Task :
 - Font X
-- work ~
+- work X
 - Tailwind CSS
-- Annimation page
-- data
+    - Menu X
+    - Accueil X
+    - A propos de moi X
+    - Hydratation error ImageLoader X
+    - Menu mobile (thème, responsive, ...) X
+    - Footer X / custom layout X
+    - Contact X / Revoir Msg d'envoie de mail ~
+    - Mon parcours X / Rajouter Date d'exp + projet
+    - Mes projets X
+    - Mention légales X
+    - Veille technologique ---> On conserve/update ?
+- Update Data & Fix
+    - A propos de moi X
+    - Mon parcours X
+    - Mes projets ~
+        - Rajouter portfolio, projet kube, etc ?
+        - Liste et image comment les importer
+    - Remove useless file
+        - logo inutile
+        - doublon
+    - Armoniser le code 
+        - exemple ts pour skill, etc...
+        - page.tsx = prebuild avec un TITLE
+        - Création de composant générique
+        - Création de folder dans composant
+    - Généré automatiquement les icons ???
+- Mise en prod v1 & push
+- Annimation page (#ReactSlideRoutes 2.0)
+- Optimisation

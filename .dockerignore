@@ -1,0 +1,49 @@
+# Dépendances et build
+node_modules/
+.next/
+npm-debug.log
+yarn-error.log
+
+# NE PAS IGNORER - Nécessaire pour npm ci
+# package-lock.json
+# yarn.lock
+
+# Fichiers de contrôle de version
+.git/
+.gitignore
+.github/
+
+# Fichiers d'environnement
+.env
+.env.local
+.env.*.local
+
+# IDE et outils
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Documentation et Guides (non utilisés en production)
+README.md
+CODE_REVIEW.md
+CRITIQUE_CODE_REVIEW.md
+PATTERNS_GUIDE.md
+REFACTORED_GUIDE.md
+REFACTORING_SUMMARY.md
+todo.md
+*.md
+
+# Tests
+__tests__/
+.test/
+*.test.*
+jest.config.js
+
+# OS
+.DS_Store
+.env.local
+.env.*.local
