@@ -8,9 +8,9 @@ import ImageLoader from '@/components/ImageLoader';
 import type { SkillLogo } from '@/data/skills';
 
 const CardInfoField = ({ label = '', value = '', children, className = '' }: { label?: string, value?: string, children?: React.ReactNode, className?: string }) => (
-    <div className={`relative group text-left w-max block border-b-[0.4vh] border-(--color) pb-1 ${className}`}>
+    <div className={`relative group text-left w-max block border-b-[0.3vh] sm:border-b-[0.4vh] border-(--color) pb-1 ${className}`}>
         <span className='text-[1.8vw] lg:text-[1vw]'>{label}</span>
-        <h1 className='m-0 -mt-1 text-[2.5vw] lg:text-[1.8vw] text-center font-bold'>{value}</h1>
+        <h1 className='m-0 -mt-1.5 sm:-mt-1 text-[2.5vw] lg:text-[1.8vw] text-center font-bold'>{value}</h1>
         {children}
     </div>
 );
@@ -61,7 +61,7 @@ export function AboutContent() {
                 {
                     type: 'field', label: "DATE DE NAISSANCE", value: "07 07 2003",
                     children: (
-                        <div className={`absolute z-50 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 top-full mt-4 w-max bg-(--color) text-white p-4 rounded-lg text-sm text-center transition-all duration-300
+                        <div className={`absolute z-20 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 top-full mt-4 w-max bg-(--color) text-white p-4 rounded-lg text-sm text-center transition-all duration-300
                             before:content-[''] before:absolute before:z-[-1] before:-top-2 before:left-1/2 before:-translate-x-1/2 before:w-8 before:h-8 before:bg-(--color) before:rounded before:rotate-45 select-none`}>
                             {`${age.years} ans ${age.months} mois ${age.days} jours `}<br />
                             {`${age.hours}h ${age.minutes}m ${age.seconds}s`}
@@ -81,7 +81,7 @@ export function AboutContent() {
     return (
         <div className='font-(family-name:--font-akaya-kanadaka) text-center min-h-[calc(100vh-232px)] max-w-full pb-8' onClick={() => setIdFullscreen(0)}>
             <motion.div
-                className={`relative aspect-video flex w-11/12 md:w-10/12 lg:w-1/2 mx-auto mt-8 md:mt-16 mb-4 overflow-hidden rounded-3xl p-5 shadow-md
+                className={`relative aspect-video flex w-11/12 md:w-10/12 lg:w-1/2 mx-auto mt-8 md:mt-16 mb-4 rounded-3xl p-5 shadow-md
                    bg-[radial-gradient(var(--color)_2%,transparent_15%),radial-gradient(var(--color)_2%,transparent_15%)] bg-size-[2vh_2vh] bg-position-[0_0,1vh_1vh]
                    transition-transform duration-300 ${idFullscreen === 1 ? 'scale-125 z-20' : ''}`}
             >
@@ -113,20 +113,21 @@ export function AboutContent() {
 
             <motion.div className="mt-20 font-(family-name:--font-poppins) px-4">
                 <div className='inline-block relative mb-9'>
-                    <h1 className="text-4xl md:text-5xl text-(--color) font-bold">Mes compétences :</h1>
+                    <h1 className="text-4xl md:text-5xl text-(--color) font-bold">Mes compétences</h1>
                     <div className='hidden absolute -bottom-2.2 left-0 right-0 h-2 bg-(--color) rounded-md'></div>
                 </div>
 
                 <div className="space-y-12">
                     {skillCategories.map((category) => (
-                        <div key={category.idStart} className={`max-w-4xl mx-auto p-6 md:p-10 rounded-2xl shadow-sxl ${category.className}`}>
+                        <div key={category.idStart} className={`group max-w-4xl mx-auto p-6 md:p-10 rounded-2xl shadow-sxl ${category.className}`}>
                             <h2 className='text-4xl font-(family-name:--font-akaya-kanadaka) font-bold mb-6'>{category.title}</h2>
                             <div className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 ${category.isLeft ? '' : '[direction:rtl]'}`}>
                                 {category.skills.map((skill, skillIndex) => (
                                     <div
                                         key={skillIndex}
-                                        className={`relative p-2 [direction:ltr] rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 flex flex-col justify-center items-center min-h-42.5 min-w-25 border-0 border-(--color)
-              ${idFullscreen === category.idStart + skillIndex ? 'scale-[1.3]! !sm:scale-[1.5] !lg:scale-[1.6] z-20 bg-white-500 dark:bg-black-500 border-2' : 'bg-transparent'}`}
+                                        className={`relative p-2 [direction:ltr] rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:scale-115 flex flex-col justify-center items-center min-h-42.5 min-w-25 border-0 border-(--color)
+                                                    ${idFullscreen === category.idStart + skillIndex ? 'scale-[1.3]! !sm:scale-[1.5] !lg:scale-[1.6] z-20 bg-white-500! dark:bg-black-500! border-2' : 'bg-transparent'}
+                                                    &:span:hover:opacity-100  hover:bg-(--color)/20`}
                                         onClick={(e) => autoSetIdFullscreen(category.idStart + skillIndex, e)}
                                     >
                                         <div className={`flex justify-center items-center mb-2 h-16 space-x-1 ${(skill.logos?.length ?? 0) > 2 ? 'grid grid-cols-2 gap-2' : ''}`}>
@@ -155,6 +156,7 @@ export function AboutContent() {
                                     </div>
                                 ))}
                             </div>
+                            <span className='sm:opacity-0 group-hover:opacity-100 sm:text-xl md:text-2xl font-(family-name:--font-akaya-kanadaka) transition-all duration-300'>Cliquer pour plus d'informations</span>
                         </div>
                     ))}
                 </div>

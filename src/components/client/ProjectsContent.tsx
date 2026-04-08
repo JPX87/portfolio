@@ -31,7 +31,7 @@ export function ProjectsContent() {
     return (
         <div className="min-h-[calc(100vh-241px)] w-full pb-8 font-(family-name:--font-poppins) text-center transition-all duration-300">
             <section className="bg-secondary mx-auto w-max max-w-[calc(100vw-100px)] mt-6 xl:mt-12 p-6 pb-12 xl:px-10 rounded-3xl transition-all duration-300">
-                <h1 className='text-3xl text-(--color) text-underline font-bold mb-4'>Filtre :</h1>
+                <h1 className='text-3xl text-(--color) text-underline font-bold mb-4'>Filtre</h1>
                 <div className='flex flex-col lg:flex-row items-center justify-center gap-4 xl:gap-6'>
                     <label htmlFor="search" className="font-semibold m-0 text-lg">Recherche :</label>
                     <input

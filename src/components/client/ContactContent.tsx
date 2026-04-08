@@ -17,7 +17,7 @@ const Label = ({ children, className = "" }: { children: React.ReactNode, classN
 );
 
 const ContactLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
-    <a href={href} className="flex items-center justify-center mx-auto w-fit px-6 py-2 min-w-48 sm:min-w-56 h-10 sm:h-12 rounded-md border-2 border-(--color) text-base sm:text-lg transition-transform duration-200 hover:scale-95 focus-visible:scale-95 focus:outline-none">
+    <a href={href} className="flex items-center justify-center mx-auto w-fit px-3 sm:px-4 md:px-6 py-2 min-w-48 sm:min-w-56 h-10 sm:h-12 rounded-md border-2 border-(--color) text-base sm:text-lg transition-transform duration-200 hover:scale-95 focus-visible:scale-95 focus:outline-none">
         {children}
     </a>
 );
@@ -108,7 +108,7 @@ export function ContactContent() {
 
             <div className="flex flex-col xl:flex-row gap-10 xl:gap-16 justify-center w-full max-w-360 mx-auto py-4 px-4 sm:px-8">
                 <div className={SectionCardClasses}>
-                    <Title>Information de contact :</Title>
+                    <Title>Information de contact</Title>
 
                     <div className="flex flex-col gap-6 w-full">
                         <div>
@@ -151,7 +151,7 @@ export function ContactContent() {
                     id="form"
                     className={SectionCardClasses}
                 >
-                    <Title>Formulaire de contact :</Title>
+                    <Title>Formulaire de contact</Title>
                     <div className="flex flex-col gap-5 w-full max-w-md mx-auto">
                         <FormInput type="text" name="user_name" placeholder="Nom" required className="text-center" />
                         <FormInput type="text" name="user_nickname" placeholder="Prenom" required className="text-center" />

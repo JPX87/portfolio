@@ -37,7 +37,7 @@ export const journeyItems: JourneyItem[] = [
         priority: true,
         content: [
             {
-                title: 'Master MIAGE :',
+                title: 'Master MIAGE',
                 description: 'Méthodes informatiques appliquées à la gestion des entreprises, parcours Ingénierie de la transformation numérique'
             }
         ]
@@ -54,7 +54,7 @@ export const journeyItems: JourneyItem[] = [
         priority: true,
         content: [
             {
-                title: 'Ingénieur Full-Stack (Next / Express / Oracle SQL) :',
+                title: 'Ingénieur Full-Stack (Next / Express / Oracle SQL)',
                 description: 'Recueil des besoins utilisateurs et conception d\'une application de gestion d\'assets connectée à l\'API BMC, incluant la modélisation de données, le déploiement sécurisé sous PM2 et la rédaction de la documentation technique pour l\'exploitation'
             }
         ]
@@ -71,7 +71,7 @@ export const journeyItems: JourneyItem[] = [
         priority: true,
         content: [
             {
-                title: 'Certification Premier Secours Citoyen/Civique :',
+                title: 'Certification Premier Secours Citoyen/Civique',
                 description: 'Formation aux gestes de premiers secours et à la prévention des risques pour intervenir efficacement en cas d\'urgence'
             }
         ]
@@ -87,7 +87,7 @@ export const journeyItems: JourneyItem[] = [
         logo: ['/Journey/logo/univ-tls.png'],
         content: [
             {
-                title: 'Licence 3 MIASHS :',
+                title: 'Licence 3 MIASHS',
                 description: 'Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales parcours MIAGE'
             }
         ]
@@ -103,7 +103,7 @@ export const journeyItems: JourneyItem[] = [
         logo: ['/Journey/logo/cgi.png'],
         content: [
             {
-                title: 'Développeur SAP (ABAP / UI5 / ODATA) :',
+                title: 'Développeur SAP (ABAP / UI5 / ODATA)',
                 description: "Développement d'extensions spécifiques SAP et résolution d'incidents sur l'outil de certification des aéronefs en équipe Agile (SAFe)."
             }
         ]
@@ -119,7 +119,7 @@ export const journeyItems: JourneyItem[] = [
         logo: ['/Journey/logo/valadon.png'],
         content: [
             {
-                title: 'BTS SIO :',
+                title: 'BTS SIO',
                 description: 'Services informatiques aux organisations, option B solutions logicielles et applications métiers'
             }
         ]
@@ -135,7 +135,7 @@ export const journeyItems: JourneyItem[] = [
         logo: ['/Journey/logo/la-poste.png'],
         content: [
             {
-                title: 'Développeur Web (PHP/JS) :',
+                title: 'Développeur Web (PHP/JS)',
                 description: 'Conception d\'une solution Web d\'affichage dynamique permettant la diffusion automatisée de flux (Photos, Vidéos, PDF) avec gestion fine des droits utilisateurs et planification intelligente.'
             }
         ]
@@ -151,7 +151,7 @@ export const journeyItems: JourneyItem[] = [
         logo: ['/Journey/logo/maryse-bastie.png'],
         content: [
             {
-                title: 'Bac PRO SN :',
+                title: 'Bac PRO SN',
                 description: 'Système Numérique, Réseaux Informatiques et Systèmes Communicants'
             }
         ]
@@ -167,7 +167,7 @@ export const journeyItems: JourneyItem[] = [
         logo: ['/Journey/logo/cci.jpg'],
         content: [
             {
-                title: 'Technicien système et réseau :',
+                title: 'Technicien système et réseau',
                 description: 'Appui technique et maintenance de proximité : informatique, systèmes et réseaux'
             }
         ]
@@ -183,7 +183,7 @@ export const journeyItems: JourneyItem[] = [
         logo: ['/Journey/logo/la-poste.png'],
         content: [
             {
-                title: 'Technicien système et réseau :',
+                title: 'Technicien système et réseau',
                 description: "Déploiement et configuration d'une solution de vidéosurveillance IP sous Linux (ZoneMinder/Ubuntu)"
             }
         ]
@@ -199,7 +199,7 @@ export const journeyItems: JourneyItem[] = [
         logo: ['/Journey/logo/la-poste.png'],
         content: [
             {
-                title: 'Développeur Python :',
+                title: 'Développeur Python',
                 description: "Maintenance et développement des solutions logicielles de contrôle d'accès (Python)"
             }
         ]
@@ -215,7 +215,7 @@ export const journeyItems: JourneyItem[] = [
         logo: ['/Journey/logo/asp.png'],
         content: [
             {
-                title: 'Technicien Support :',
+                title: 'Technicien Support',
                 description: 'Masterisation de postes, dépannage et installation de smartphone'
             }
         ]

@@ -116,24 +116,24 @@ export function ProjectDetailContent() {
             </div>
 
             <div className="w-full lg:w-3/4 h-max lg:h-full overflow-visible lg:overflow-auto px-5 lg:px-5 pb-5">
-                <h2 className="text-[25px] font-bold border-b-2 border-(--color) w-max mx-auto mt-12 mb-6 px-2.5 first:mt-12.5">Description du projet : </h2>
+                <h2 className="text-[25px] font-bold border-b-2 border-(--color) w-max mx-auto mt-12 mb-6 px-2.5 first:mt-12.5">Description du projet</h2>
                 <p className="w-full sm:w-[70%] text-[18px] mx-auto text-left leading-relaxed">{aProjet.description}</p>
 
                 {aProjet.note ? (
                     <section className="w-max max-w-[calc(100%-50px)] mt-10 mx-auto p-4 rounded-[20px] shadow-[0_0_5px_var(--back4-color)]">
-                        <h2 className="text-[20px] font-bold border-b-2 border-(--color) w-max mx-auto mb-2.5 px-2.5">Note : </h2>
+                        <h2 className="text-[20px] font-bold border-b-2 border-(--color) w-max mx-auto mb-2.5 px-2.5">Note</h2>
                         <p className="text-[18px] text-center">{aProjet.note}</p>
                     </section>
                 ) : ''}
 
-                <h2 className="text-[25px] font-bold border-b-2 border-(--color) w-max mx-auto mt-12 mb-6 px-2.5">Les missions : </h2>
+                <h2 className="text-[25px] font-bold border-b-2 border-(--color) w-max mx-auto mt-12 mb-6 px-2.5">Les missions</h2>
                 <ul className="list-disc w-max max-w-[90%] sm:max-w-[70%] mx-auto text-[18px] text-left space-y-2">
                     {aProjet.missions.map((aMission) => (
                         <li key={aMission}>{aMission}</li>
                     ))}
                 </ul>
 
-                <h2 className="text-[25px] font-bold border-b-2 border-(--color) w-max mx-auto mt-12 mb-6 px-2.5">Les medias : </h2>
+                <h2 className="text-[25px] font-bold border-b-2 border-(--color) w-max mx-auto mt-12 mb-6 px-2.5">Les medias </h2>
 
                 <div
                     className={`group relative overflow-hidden flex mx-auto mt-2 mb-10 rounded-[20px] shadow-[0_0_30px_var(--back2-color)] bg-black font-black ${aProjet.portraitMode
